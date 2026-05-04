@@ -18,7 +18,7 @@ print ("""
 ╚  └─┘┴ ┴ └─┘  ┴  └─┘┴└─  ╩└─┘┴ ┴─┴┘└─┘┴└─┴ ┴
 """)
 
-jogo = input ("""
+jogo =  int(input ("""
 ---------------------------------
 *         01 - Mad Libs         *
 *         02 - Calculadora      *
@@ -26,7 +26,14 @@ jogo = input ("""
 *         04 - Jokenpô          *
 ---------------------------------
 
-Qual você deseja jogar? """)
+Qual você deseja jogar? """))
+contador = 0 
+while contador<=jogo:
+    print (contador)
+    contador = contador + 1
+    if jogo == 0:
+        break
+
 
 if jogo== 1: 
     jogar_mad_libs
